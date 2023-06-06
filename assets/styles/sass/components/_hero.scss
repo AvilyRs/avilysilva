@@ -1,0 +1,79 @@
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10.3125rem;
+
+  width: min(100%, calc(1072px + 1rem));
+  margin: 3.625rem auto 3.625rem;
+
+  & .contentContainer {
+    & h1 {
+      font-size: 2.625rem;
+      font-weight: 700;
+      color: $gray-50;
+    }
+
+    & h2 {
+      margin-top: 0.562rem;
+      
+      font-size: 4.875rem;
+      font-weight: 700;
+      color: $cyan-500;
+      text-transform: uppercase;
+
+      & span {
+        color: $gray-50;
+      }
+    }
+
+    p {
+      margin-top: 1.75rem;
+      margin-bottom: 3.125rem;
+
+      font-size: 1.25rem;
+      color: $cadet-600;
+      line-height: 160%;
+    }
+
+    button[role="scroll-contacts"] {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+
+      border: none;
+
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: $gray-50;
+      border-radius: 30px;
+      padding: 0.875rem 1.5rem;
+
+      background: $cyan-500;
+
+      @include buttonHover;
+    }
+  }
+
+  .sideContainer {
+    & img {}
+  }
+
+  @include tabletScreen {
+    padding: 0 1rem;
+
+    & .contentContainer {
+      & h1 {
+        font-size: 2rem;
+      }
+  
+      & h2 {
+        font-size: 4.275rem;
+      }
+    }
+
+    & .sideContainer {
+      display: none;
+    }
+  }
+}

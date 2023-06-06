@@ -18,6 +18,15 @@ $body-gradient: linear-gradient(to bottom, #000223, #0A0A0A);
   }
 }
 
+@mixin buttonHover() {
+  transition: box-shadow 0.3s, background-color 0.3s;
+
+  &:hover {
+    box-shadow: 0 10px 25px -7px #4374BC;
+    background: $cyan-400;
+  }
+}
+
 // Media Queries
 @mixin desktopScreen {
   @media screen and (max-width: 1200px) {

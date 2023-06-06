@@ -31,4 +31,8 @@ body {
   background-image: $body-gradient;
   background-repeat: no-repeat;
   background-size: 100%;
+
+  @include tabletScreen {
+    font-size: 87.5%;
+  }
 }

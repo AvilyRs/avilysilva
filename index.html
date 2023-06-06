@@ -19,7 +19,7 @@
   <header>
     <nav class="navbarContainer">
       <img src="/assets/images/logo.svg" alt="Avily Silva">
-      <ul>
+      <ul role="menu">
         <li><a href="#">Início</a></li>
         <li><a href="#">Experiências</a></li>
         <li><a href="#">Projetos</a></li>
@@ -27,8 +27,30 @@
         <li><a href="#">Quem sou eu</a></li>
       </ul>
 
-      <button role="closer">Fechar</button>
+      <button role="menu-toggler">
+        <img src="/assets/images/icons/bars.svg" alt="Menu">
+      </button>
+      <button role="menu-closer">Fechar</button>
     </nav>
+
+    <section class="heroContainer">
+      <div class="contentContainer">
+        <h1>Software Engineer</h1>
+        <h2>Front<span>.</span>end</h2>
+
+        <p>Utilizando as melhores práticas e ferramentas mais atuais do mercado, posso ajudar você e sua empresa a desenvolver Softwares de alta qualidade e desempenho e se destacar no mercado.</p>
+
+        <button role="scroll-contacts">
+          Contatos
+          <img src="/assets/images/icons/chevron-right.svg" alt="Seta para baixo">
+        </button>
+      </div>
+      <div class="sideContainer">
+        <img src="/assets/images/hero.png" alt="Developer">
+      </div>
+    </section>
   </header>
+
+  <script src="/assets/scripts/menu.js"></script>
 </body>
 </html>

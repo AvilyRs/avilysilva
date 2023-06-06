@@ -6,10 +6,9 @@
   height: 5.75rem;
   width: min(100%, calc(1072px + 1rem));
   margin: 0 auto;
-  padding: 0 1rem;
   background: transparent;
 
-  button[role="closer"] {
+  & button[role="menu-closer"] {
     display: none;
 
     position: absolute;
@@ -21,20 +20,35 @@
 
     padding: 1rem;
     border: none;
+
+    z-index: 6;
+
     background: transparent;
 
     @include linkHover;
+  }
 
-    @include tabletScreen {
-      display: inline-block;
+  & button[role="menu-toggler"] {
+    display: none;
+    border: none;
+
+    z-index: 4;
+
+    background: transparent;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.5;
+      transform: translateX(100px);
     }
   }
 
-  img {
+  & img {
     width: min(100%, 9.0625rem);
   }
 
-  ul {
+  & ul {
     list-style: none;
 
     li {
@@ -52,15 +66,31 @@
     li + li {
       margin-left: 1.875rem;
     }
+  }
 
-    @include tabletScreen {
-      position: absolute;
+  @include tabletScreen {
+    padding: 0 1rem;
+
+    & button[role="menu-closer"] {
+      display: none;
+    }
+
+    & button[role="menu-toggler"] {
+      display: inline-block;
+    }
+
+    & ul {
+      display: none;
+
+      position: fixed;
       top: 0;
       left: 0;
 
       height: 100%;
       width: 100%;
       padding: 1.5rem 0;
+
+      z-index: 5;
 
       background: $card-gradient;
 
