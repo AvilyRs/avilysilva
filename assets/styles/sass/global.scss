@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  font: 1rem 'Archivo', sans-serif;
+  -webkit-font-smooth: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+:focus-visible {
+  outline-offset: 3px;
+  outline-color: $cyan-500;
+  outline-width: 3px;
+  outline-style: solid;
+}
+
+body {
+  color: $gray-50;
+
+  background-image: $body-gradient;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
