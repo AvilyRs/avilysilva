@@ -9,3 +9,30 @@ $gray-50: #EFEFEF;
 // Gradients
 $card-gradient: linear-gradient(to bottom, #171C23, #10141A);
 $body-gradient: linear-gradient(to bottom, #000223, #0A0A0A);
+
+@mixin linkHover() {
+  transition: color 0.2s;
+
+  &:hover {
+    color: $cyan-500;
+  }
+}
+
+// Media Queries
+@mixin desktopScreen {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tabletScreen {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobileScreen {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}

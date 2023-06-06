@@ -1,0 +1,83 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 5.75rem;
+  width: min(100%, calc(1072px + 1rem));
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: transparent;
+
+  button[role="closer"] {
+    display: none;
+
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+
+    font-size: 1.5rem;
+    color: $cadet-600;
+
+    padding: 1rem;
+    border: none;
+    background: transparent;
+
+    @include linkHover;
+
+    @include tabletScreen {
+      display: inline-block;
+    }
+  }
+
+  img {
+    width: min(100%, 9.0625rem);
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+
+    li a {
+      color: $gray-50;
+      text-decoration: none;
+      font-size: 1.25rem;
+
+      @include linkHover;
+    }
+
+    li + li {
+      margin-left: 1.875rem;
+    }
+
+    @include tabletScreen {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 100%;
+      width: 100%;
+      padding: 1.5rem 0;
+
+      background: $card-gradient;
+
+      & li {
+        display: block;
+      }
+
+      & li a {
+        display: block;
+        padding: 1rem 2.5rem;
+
+        font-size: 1.5rem;
+      }
+
+      & li + li {
+        margin-left: unset;
+      }
+    }
+  }
+}
