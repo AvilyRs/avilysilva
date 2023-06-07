@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="/assets/styles/css/index.css">
 
-  <title>Avily Silva</title>
+  <title>Portifólio | Avily Silva</title>
 </head>
 <body>
   <header>
@@ -42,7 +42,7 @@
 
         <button role="scroll-contacts">
           Contatos
-          <img src="/assets/images/icons/chevron-right.svg" alt="Seta para baixo">
+          <img src="/assets/images/icons/chevron-down.svg" alt="Seta para baixo">
         </button>
       </div>
       <div class="sideContainer">
@@ -55,8 +55,17 @@
     <section class="experiences">
       <header>
         <h3>Experiências</h3>
+        <div class="sideHeaderContainer">
+          <button onclick="experiencesCarouselScrollToLeft()">
+            <img src="/assets/images/icons/chevron-left.svg" title="Experiência anterior" alt="Seta para a esquerda">
+          </button>
+          <button onclick="experiencesCarouselScrollToRight()">
+            <img src="/assets/images/icons/chevron-right.svg" title="Próxima experiência" alt="Seta para a direita">
+          </button>
+        </div>
       </header>
-      <div>
+
+      <div role="experiences-carousel">
         <article class="experienceCard" data-current>
           <h4>Meritum Compliance</h4>
           <span>Atualmente</span>
@@ -80,5 +89,6 @@
   </main>
 
   <script src="/assets/scripts/menu.js"></script>
+  <script src="/assets/scripts/experiencesCarousel.js"></script>
 </body>
 </html>

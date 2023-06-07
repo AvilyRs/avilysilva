@@ -55,10 +55,6 @@
     }
   }
 
-  .sideContainer {
-    & img {}
-  }
-
   @include tabletScreen {
     padding: 0 1rem;
 
@@ -68,7 +64,7 @@
       }
   
       & h2 {
-        font-size: 4.275rem;
+        font-size: 3rem;
       }
     }
 
