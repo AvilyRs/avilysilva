@@ -1,0 +1,82 @@
+.experiences {
+  width: min(100%, calc(1072px + 1rem));
+  margin: 3.625rem auto 3.625rem;
+  padding: 0 1rem;
+
+  @include sectionHeader;
+
+  & > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3125rem;
+
+    max-width: 1200px;
+  }
+
+  & .experienceCard {
+    position: relative;
+
+    padding: 1.5625rem;
+    margin: 2px;
+    border-radius: 8px;
+
+    transition: box-shadow 0.2s ease;
+
+    background: $card-gradient;
+
+    &[data-current], &:hover {
+      box-shadow: 0 0 0 2px $cyan-500;
+    }
+
+    & h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $gray-50;
+      margin-bottom: 0.5rem;
+      padding-right: 1.3rem;
+    }
+    
+    & span {
+      display: block;
+      font-size: 0.875rem;
+      color: $cyan-400;
+      letter-spacing: 1px;
+      margin-bottom: 1.1rem;
+    }
+
+    & p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 120%;
+      color: $cadet-600;
+    }
+
+    & img {
+      position: absolute;
+      top: 1.5625rem;
+      right: 1.5625rem;
+
+      width: 1.5rem;
+    }
+  }
+
+  @include tabletScreen {
+    & > div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    & .experienceCard:last-of-type {
+      grid-column-end: span 2;
+    }
+  }
+
+  @include mobileScreen {
+    & > div {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    & .experienceCard:last-of-type {
+      grid-column-end: unset;
+    }
+  }
+}

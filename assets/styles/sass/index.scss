@@ -1,4 +1,5 @@
 @import "./variables";
 @import "./global";
 
-@import "./components/navbar", "./components/hero";
+@import "./components/navbar", "./components/sectionHeader";
+@import "./sections/hero", "./sections/experiences";
