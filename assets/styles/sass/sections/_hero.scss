@@ -57,6 +57,7 @@
 
   @include tabletScreen {
     padding: 0 1rem;
+    gap: 2rem;
 
     & .contentContainer {
       & h1 {
@@ -67,8 +68,10 @@
         font-size: 3rem;
       }
     }
+  }
 
-    & .sideContainer {
+  @include mobileScreen {
+    & .heroSideContainer {
       display: none;
     }
   }

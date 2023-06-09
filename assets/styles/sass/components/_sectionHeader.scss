@@ -23,5 +23,15 @@
 
       margin-left: 1.8rem;
     }
+
+    @include mobileScreen {
+      & h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $gray-50;
+  
+        margin-left: 1.8rem;
+      }
+    }
   }
 }

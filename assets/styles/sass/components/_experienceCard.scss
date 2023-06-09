@@ -1,0 +1,55 @@
+.experienceCard {
+  flex: 1;
+
+  position: relative;
+
+  scroll-snap-align: start;
+  min-width: 407px;
+  max-width: 407px;
+  padding: 1.5625rem;
+  margin: 2px;
+  border-radius: 8px;
+
+  transition: box-shadow 0.2s ease;
+
+  background: $card-gradient;
+
+  &:first-of-type {
+    border: 2.5px solid $cyan-500;
+  }
+  & h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $gray-50;
+    margin-bottom: 0.5rem;
+    padding-right: 1.3rem;
+  }
+  
+  & span {
+    display: block;
+    font-size: 0.875rem;
+    color: $cyan-400;
+    letter-spacing: 1px;
+    margin-bottom: 1.1rem;
+  }
+
+  & p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: $cadet-600;
+  }
+
+  & img {
+    position: absolute;
+    top: 1.5625rem;
+    right: 1.5625rem;
+
+    width: 1.5rem;
+  }
+
+  @include mobileScreen {
+    min-width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2rem);
+  }
+}
