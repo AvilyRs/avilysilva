@@ -5,7 +5,7 @@
   gap: 10.3125rem;
 
   width: min(100%, calc(1072px + 1rem));
-  margin: 3.625rem auto 3.625rem;
+  margin: 3.625rem auto 8rem;
 
   & .contentContainer {
     & h1 {
@@ -71,6 +71,8 @@
   }
 
   @include mobileScreen {
+    margin-bottom: 5rem;
+
     & .heroSideContainer {
       display: none;
     }

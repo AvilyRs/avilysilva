@@ -45,3 +45,9 @@ $body-gradient: linear-gradient(to bottom, #000223, #0A0A0A);
     @content;
   }
 }
+
+@mixin mobileExtraSmallScreen {
+  @media screen and (max-width: 403px) {
+    @content;
+  }
+}

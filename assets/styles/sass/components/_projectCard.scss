@@ -1,6 +1,8 @@
 .projectCard {
+  min-width: 20.8125rem;
   max-width: 20.8125rem;
   border-radius: 8px;
+  margin-top: 2rem;
   padding: 1.5rem;
   background: $card-gradient;
 
@@ -9,7 +11,7 @@
 
     & .coverImage {
       border-radius: 8px;
-      margin: 0 auto 2.1rem;
+      margin: -3.5rem auto 2.1rem;
       width: min(100%, 17.625rem);
     }
 
@@ -41,6 +43,27 @@
       padding: 0.625rem 1rem;
       border-radius: 8px;
       background: $cyan-500;
+
+      & img {
+        margin-top: 0.4rem;
+        height: 1.7rem;
+        width: 1.7rem;
+      }
+
+      @include buttonHover;
+    }
+  }
+
+  @include mobileExtraSmallScreen {
+    min-width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2rem);
+
+    & header {
+      & .coverImage {
+        border-radius: 8px;
+        margin: -3.5rem auto 2.1rem;
+        width: 100%;
+      }
     }
   }
 }

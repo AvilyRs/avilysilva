@@ -5,4 +5,19 @@
     margin-left: unset;
     padding: 0 1rem;
    }
+
+  & > div[role="projectsCarousel"] {
+    display: flex;
+    gap: 2.3125rem;
+
+    max-width: 1550px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
