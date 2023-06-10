@@ -6,6 +6,8 @@
   padding: 1.5rem;
   background: $card-gradient;
 
+  scroll-snap-align: start;
+
   & header {
     margin-bottom: 1.25rem;
 

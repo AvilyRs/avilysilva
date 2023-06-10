@@ -13,7 +13,6 @@
     max-width: 1550px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
     scroll-behavior: smooth;
 
     &::-webkit-scrollbar {

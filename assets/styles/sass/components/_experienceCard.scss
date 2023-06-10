@@ -9,10 +9,10 @@
   padding: 1.5625rem;
   margin: 2px;
   border-radius: 8px;
-
   transition: box-shadow 0.2s ease;
-
   background: $card-gradient;
+
+  scroll-snap-align: start;
 
   &:first-of-type {
     border: 2.5px solid $cyan-500;
