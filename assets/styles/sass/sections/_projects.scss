@@ -1,0 +1,8 @@
+.projects {
+  margin-left: calc((100vw - 1088px) / 2);
+
+  @include tabletScreen {
+    margin-left: unset;
+    padding: 0 1rem;
+   }
+}

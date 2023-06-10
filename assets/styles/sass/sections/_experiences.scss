@@ -1,39 +1,6 @@
 .experiences {
   margin-top: 7.25rem;
   margin-left: calc((100vw - 1088px) / 2);
-  
-  & header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    max-width: 1088px;
-
-    & .sideHeaderContainer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-
-      & button {
-        border: none;
-        background: transparent;
-
-        transition: all 0.2s ease;
-
-        & img {
-          width: 2.25rem;
-        }
-
-        &:hover {
-          opacity: 0.5;
-          transform: scale(0.9);
-        }
-      }
-    }
-  }
-
-  @include sectionHeader;
 
   @include tabletScreen {
    margin: unset;

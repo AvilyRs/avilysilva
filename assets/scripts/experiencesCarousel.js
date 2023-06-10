@@ -1,4 +1,4 @@
-const experiencesCarousel = document.querySelectorAll('[role=experiences-carousel]')[0];
+const experiencesCarousel = document.querySelectorAll('[role=experiencesCarousel]')[0];
 
 function experiencesCarouselScrollToLeft() {
   experiencesCarousel.scrollBy(-200, 0);

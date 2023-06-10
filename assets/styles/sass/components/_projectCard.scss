@@ -1,0 +1,46 @@
+.projectCard {
+  max-width: 20.8125rem;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: $card-gradient;
+
+  & header {
+    margin-bottom: 1.25rem;
+
+    & .coverImage {
+      border-radius: 8px;
+      margin: 0 auto 2.1rem;
+      width: min(100%, 17.625rem);
+    }
+
+    & h4 {
+      font-size: 1.5rem;
+      color: $gray-50;
+    }
+  }
+
+  & P {
+    font-size: 1rem;
+    color: $gray-50;
+    line-height: 160%;
+  }
+
+  & footer {
+    margin-top: 1.25rem;
+    
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+
+      text-decoration: none;
+      font-size: 1rem;
+      color: $gray-50;
+      width: 100%;
+      padding: 0.625rem 1rem;
+      border-radius: 8px;
+      background: $cyan-500;
+    }
+  }
+}

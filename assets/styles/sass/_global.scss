@@ -37,3 +37,13 @@ body {
     font-size: 87.5%;
   }
 }
+
+section + section {
+  margin-top: 7.5rem;
+}
+
+@include mobileScreen {
+  section + section {
+    margin-top: 5.5rem;
+  }
+}

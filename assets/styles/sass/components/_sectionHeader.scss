@@ -1,7 +1,36 @@
-@mixin sectionHeader() {
-  & header {
+section {
+  & > header {
     position: relative;
     margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1088px;
+
+    & .sideHeaderContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      & button {
+        border: none;
+        background: transparent;
+
+        transition: all 0.2s ease;
+
+        & img {
+          width: 2.25rem;
+        }
+
+        &:hover {
+          opacity: 0.5;
+          transform: scale(0.9);
+        }
+      }
+    }
 
     &::before {
       position: absolute;

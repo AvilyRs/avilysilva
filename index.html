@@ -9,16 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-  <link rel="icon" type="image/png" href="/favicon.jpg" />
+  <link rel="icon" type="image/png" href="./favicon.jpg" />
 
-  <link rel="stylesheet" href="/assets/styles/css/index.css">
+  <link rel="stylesheet" href="./assets/styles/css/index.css">
 
   <title>Portifólio | Avily Silva</title>
 </head>
 <body>
   <header>
     <nav class="navbarContainer">
-      <img src="/assets/images/logo.svg" alt="Avily Silva">
+      <img src="./assets/images/logo.svg" alt="Avily Silva">
       <ul role="menu">
         <li><a href="#">Início</a></li>
         <li><a href="#">Experiências</a></li>
@@ -28,7 +28,7 @@
       </ul>
 
       <button role="menu-toggler">
-        <img src="/assets/images/icons/bars.svg" alt="Menu">
+        <img src="./assets/images/icons/bars.svg" alt="Menu">
       </button>
       <button role="menu-closer">Fechar</button>
     </nav>
@@ -42,11 +42,11 @@
 
         <button role="scroll-contacts">
           Contatos
-          <img src="/assets/images/icons/chevron-down.svg" alt="Seta para baixo">
+          <img src="./assets/images/icons/chevron-down.svg" alt="Seta para baixo">
         </button>
       </div>
       <div class="heroSideContainer">
-        <img src="/assets/images/hero.png" alt="Developer">
+        <img src="./assets/images/hero.png" alt="Developer">
       </div>
     </section>
   </header>
@@ -57,38 +57,68 @@
         <h3>Experiências</h3>
         <div class="sideHeaderContainer">
           <button onclick="experiencesCarouselScrollToLeft()">
-            <img src="/assets/images/icons/chevron-left.svg" title="Experiência anterior" alt="Seta para a esquerda">
+            <img src="./assets/images/icons/chevron-left.svg" title="Experiência anterior" alt="Seta para a esquerda">
           </button>
           <button onclick="experiencesCarouselScrollToRight()">
-            <img src="/assets/images/icons/chevron-right.svg" title="Próxima experiência" alt="Seta para a direita">
+            <img src="./assets/images/icons/chevron-right.svg" title="Próxima experiência" alt="Seta para a direita">
           </button>
         </div>
       </header>
 
-      <div role="experiences-carousel">
+      <div role="experiencesCarousel">
         <article class="experienceCard" data-current>
           <h4>Meritum Compliance</h4>
           <span>Atualmente</span>
           <p>Responsável pelo desenvolvimento de novas aplicações e manutenção dos projetos Front-end.</p>
-          <img src="/assets/images/icons/inspect.svg" alt="Inspecionar">
+          <img src="./assets/images/icons/inspect.svg" alt="Inspecionar">
         </article>
         <article class="experienceCard">
           <h4>Olist/Meta</h4>
           <span>2020 até 2021</span>
           <p>Através da participação em cerimônias como Dailies, Design Review, Retrôs e utilizando a metodologia Scrum junto a Estórias, participei do desenvolvimen ...</p>
-          <img src="/assets/images/icons/inspect.svg" alt="Inspecionar">
+          <img src="./assets/images/icons/inspect.svg" alt="Inspecionar">
         </article>
         <article class="experienceCard">
           <h4>Clube Gazeta do Povo</h4>
           <span>2021 até 2022</span>
           <p>Participando de Dailies e através da metodologia Kanban fui responsável por desenvolver e dar manutenção em projetos de pequeno, médio e grande porte, como ...</p>
-          <img src="/assets/images/icons/inspect.svg" alt="Inspecionar">
+          <img src="./assets/images/icons/inspect.svg" alt="Inspecionar">
+        </article>
+      </div>
+    </section>
+
+    <section class="projects">
+      <header>
+        <h3>Projetos</h3>
+        <div class="sideHeaderContainer">
+          <button onclick="experiencesCarouselScrollToLeft()">
+            <img src="./assets/images/icons/chevron-left.svg" title="Projeto anterior" alt="Seta para a esquerda">
+          </button>
+          <button onclick="experiencesCarouselScrollToRight()">
+            <img src="./assets/images/icons/chevron-right.svg" title="Próximo Projeto" alt="Seta para a direita">
+          </button>
+        </div>
+      </header>
+      <div role="projectsCarousel"> 
+        <article class="projectCard">
+          <header>
+            <img class="coverImage" src="./assets/images/covers/ignews.jpg" alt="Ig News">
+            <h4>ig.news</h4>
+          </header>
+          <p>Tenha notícias em primeira mão e de altíssima qualidade através de assina turas super acessíveis e de conteúdos gerados para que você se mantenha atualizado sobre o mundo da tecnologia.</p>
+        
+          <footer>
+            <a href="#">
+              <img src="./assets/images/icons/github.svg" alt="Github">
+              Ver repositório
+            </a>
+          </footer>
         </article>
       </div>
     </section>
   </main>
 
-  <script src="/assets/scripts/menu.js"></script>
-  <script src="/assets/scripts/experiencesCarousel.js"></script>
+  <script src="./assets/scripts/menu.js"></script>
+  <script src="./assets/scripts/experiencesCarousel.js"></script>
 </body>
 </html>
