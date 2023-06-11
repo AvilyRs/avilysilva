@@ -22,4 +22,8 @@
     margin: 0 0.3rem;
     color: $cyan-500;
   }
+
+  @include mobileScreen {
+    font-size: 1rem;
+  }
 }

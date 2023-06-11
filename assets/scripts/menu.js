@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Menu Visibility
   const tabletScreenQuery = 992;
 
   let isMenuEnabled = false;
@@ -34,4 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   togglerButton.addEventListener('click', onTogglerMenu);
   closerButton.addEventListener('click', onTogglerMenu);
+
+  // Scroll Links
+  const scrollLinks = document.querySelectorAll('.scrollLink');
+
+  scrollLinks.forEach(function(scrollLink) {
+    scrollLink.addEventListener('click', onTogglerMenu);
+  });
 });

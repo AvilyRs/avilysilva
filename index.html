@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avily Silva: Desenvolvedor Front-end. Utilizo as tecnologias e as melhores práticas do mercado para construir projetos.">
+  <meta name="keyword" content="Frontend, ReactJs, NextJs, Desenvolvedor, Javascript, CSS HTML,">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,18 +15,17 @@
 
   <link rel="stylesheet" href="./assets/styles/css/index.css">
 
-  <title>Portifólio | Avily Silva</title>
+  <title>Avily Silva | Portifólio</title>
 </head>
-<body>
+<body id="header">
   <header>
     <nav class="navbarContainer">
       <img src="./assets/images/logo.svg" alt="Avily Silva">
       <ul role="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Experiências</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Conhecimentos</a></li>
-        <li><a href="#">Quem sou eu</a></li>
+        <li><a class="scrollLink" href="#experiences">Experiências</a></li>
+        <li><a class="scrollLink" href="#projects">Projetos</a></li>
+        <li><a class="scrollLink" href="#knowledge">Conhecimentos</a></li>
+        <li><a class="scrollLink" href="#whoAmI">Quem sou eu</a></li>
       </ul>
 
       <button role="menu-toggler">
@@ -40,10 +41,10 @@
 
         <p>Utilizando as melhores práticas e ferramentas mais atuais do mercado, posso ajudar você e sua empresa a desenvolver Softwares de alta qualidade e desempenho e se destacar no mercado.</p>
 
-        <button role="scroll-contacts">
+        <a href="#whoAmI" role="scroll-contacts">
           Contatos
           <img src="./assets/images/icons/chevron-down.svg" alt="Seta para baixo">
-        </button>
+        </a>
       </div>
       <div class="heroSideContainer">
         <img src="./assets/images/hero.png" alt="Developer">
@@ -52,7 +53,7 @@
   </header>
 
   <main>
-    <section class="experiencesContainer">
+    <section id="experiences" class="experiencesContainer">
       <header>
         <h3>Experiências</h3>
         <div class="sideHeaderContainer">
@@ -87,7 +88,7 @@
       </div>
     </section>
 
-    <section class="projectsContainer">
+    <section id="projects" class="projectsContainer">
       <header>
         <h3>Projetos</h3>
         <div class="sideHeaderContainer">
@@ -145,7 +146,7 @@
       </div>
     </section>
 
-    <section class="knowledgeContainer">
+    <section id="knowledge" class="knowledgeContainer">
       <header>
         <h3>Conhecimentos</h3>
       </header>
@@ -202,13 +203,13 @@
       </div>
     </section>
 
-    <section class="whoAmIContainer">
+    <section id="whoAmI" class="whoAmIContainer">
       <img src="./assets/images/avilysilva.png" alt="Avily Silva">
       <div>
         <header>
           <h4>Quem sou eu ?</h4>
         </header>
-        <p>Em 2018 tive meu primeiro contato com HTML, CSS e Javascript, desde então sou apaixonado por tecnologia, Sou Casado, Pai do Luiz Henrique, tenho uma Gata chamada Pipoca, gosto de música, toco guitarra e violão.</p>
+        <p>Em 2018 tive meu primeiro contato com HTML, CSS e Javascript, desde então sou apaixonado por tecnologia e com o apoio da minha Família, decidi investir na área e me tornar Dev Font-end. Sou Casado, Pai do Luiz Henrique, tenho uma Gata chamada Pipoca, gosto de música, toco guitarra e violão.</p>
         <footer>
           <a class="contactCard" href="#">
             <img src="./assets/images/icons/linkedin.svg" alt="LinkedIn">
