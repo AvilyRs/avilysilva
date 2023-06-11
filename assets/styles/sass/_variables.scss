@@ -27,6 +27,14 @@ $body-gradient: linear-gradient(to bottom, #000223, #0A0A0A);
   }
 }
 
+@mixin cardShadowHover() {
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 0 2.5px $cyan-500;
+  }
+}
+
 // Media Queries
 @mixin desktopScreen {
   @media screen and (max-width: 1200px) {

@@ -1,5 +1,16 @@
 @import "./variables";
 @import "./global";
 
-@import "./components/navbar", "./components/sectionHeader", "./components/experienceCard", "./components/projectCard", "./components/footer";
-@import "./sections/hero", "./sections/experiences", "./sections/projects";
+@import
+"./components/navbar",
+"./components/sectionHeader",
+"./components/experienceCard",
+"./components/projectCard",
+"./components/footer",
+"./components/knowledgeCard";
+
+@import
+"./sections/hero",
+"./sections/experiences",
+"./sections/projects",
+"./sections/knowledge";
