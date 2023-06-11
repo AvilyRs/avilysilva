@@ -1,0 +1,56 @@
+.whoAmIContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.6875rem;
+
+  max-width: 1088px;
+  margin: 14.625rem auto 0;
+  padding: 0 1rem;
+
+  & img {
+    width: min(100%), 12.4375rem;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6875rem;
+
+    & header {
+      & h4 {
+        font-size: 2.25rem;
+        font-weight: bold;
+        color: $gray-50;
+      }
+
+    }
+
+    & p {
+      font-size: 1.25rem;
+      line-height: 160%;
+      color: $cadet-600;
+
+      max-width: 550px;
+    }
+
+    & footer {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+  }
+
+  @include mobileScreen {
+    flex-direction: column;
+    align-items: center;
+
+    & div {
+      align-items: center;
+
+      & p {
+        max-width: 350px;
+        text-align: justify;
+      }
+    }
+  }
+}
