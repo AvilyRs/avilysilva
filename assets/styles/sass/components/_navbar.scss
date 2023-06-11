@@ -30,7 +30,7 @@
 
     z-index: 6;
 
-    background: $cyan-500;
+    background: rgba(255, 255, 255, 0.05);
 
     @include linkHover;
   }
