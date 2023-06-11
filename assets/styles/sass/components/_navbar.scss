@@ -11,19 +11,26 @@
   & button[role="menu-closer"] {
     display: none;
 
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
+    position: fixed;
+    // top: 1.5rem;
+    // right: 1rem;
+
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
 
     font-size: 1.5rem;
     color: $cadet-600;
 
-    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+    // padding: 1rem;
     border: none;
+    border-radius: 50%;
 
     z-index: 6;
 
-    background: transparent;
+    background: $cyan-500;
 
     @include linkHover;
   }
