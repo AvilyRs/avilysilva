@@ -1,4 +1,8 @@
 .projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
   min-width: 20.8125rem;
   max-width: 20.8125rem;
   border-radius: 8px;
