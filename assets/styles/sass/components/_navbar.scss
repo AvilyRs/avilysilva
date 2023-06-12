@@ -56,8 +56,18 @@
   & ul {
     list-style: none;
 
-    li {
+    & li {
       display: inline-block;
+    }
+
+    li:first-of-type {
+      display: none;
+
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $cyan-500;
+      padding: 1rem 2.5rem;
+      margin-bottom: 1rem;
     }
 
     li a {
@@ -93,14 +103,24 @@
 
       height: 100%;
       width: 100%;
-      padding: 1.5rem 0;
+      padding: 4rem 1.5rem 0;
 
       z-index: 5;
 
-      background: $card-gradient;
+      backdrop-filter: blur(5px);
+      background: rgba(0, 2, 35, 0.85);
+
+      & li:first-of-type {
+        display: block;
+      }
 
       & li {
         display: block;
+        text-align: center;
+
+        & a {
+          text-align: center;
+        }
       }
 
       & li a {
