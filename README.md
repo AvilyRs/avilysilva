@@ -16,6 +16,10 @@ Conheça um pouco mais sobre minha história, projetos que desenvolvi, conhecime
 - *:fire: SASS*
 - *:fire: Javascript puro (Vanilla)*
 
+### Observação
+
+Todas as funcionalidades foram desenvolvidas sem a utilização de Frameworks ou bibliotecas.
+
 ### Clonando e Rodando
 ```javascript
   // Clone o projeto
