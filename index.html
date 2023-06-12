@@ -29,16 +29,16 @@
       <img src="./assets/images/logo.svg" alt="Avily Silva">
       <ul role="menu">
         <li><span>Menu</span></li>
-        <li><a class="scrollLink" href="#experiences">Experiências</a></li>
-        <li><a class="scrollLink" href="#projects">Projetos</a></li>
-        <li><a class="scrollLink" href="#knowledge">Conhecimentos</a></li>
-        <li><a class="scrollLink" href="#whoAmI">Quem sou eu</a></li>
+        <li role="menuitem"><a class="scrollLink" href="#experiences">Experiências</a></li>
+        <li role="menuitem"><a class="scrollLink" href="#projects">Projetos</a></li>
+        <li role="menuitem"><a class="scrollLink" href="#knowledge">Conhecimentos</a></li>
+        <li role="menuitem"><a class="scrollLink" href="#whoAmI">Quem sou eu</a></li>
       </ul>
 
-      <button role="menu-toggler">
+      <button class="buttonToggler">
         <img src="./assets/images/icons/bars.svg" alt="Menu">
       </button>
-      <button role="menu-closer">X</button>
+      <button class="buttonCloser">X</button>
     </nav>
 
     <section class="heroContainer">
@@ -48,7 +48,7 @@
 
         <p>Utilizando as melhores práticas e ferramentas mais atuais do mercado, posso ajudar você e sua empresa a desenvolver Softwares de alta qualidade e desempenho e se destacar no mercado.</p>
 
-        <a href="#whoAmI" role="scroll-contacts">
+        <a href="#whoAmI" class="buttonScrollContacts">
           Contatos
           <img src="./assets/images/icons/chevron-down.svg" alt="Seta para baixo">
         </a>
@@ -73,8 +73,8 @@
         </div>
       </header>
 
-      <div role="experiencesCarousel">
-        <article class="experienceCard" data-current>
+      <div class="experiencesCarousel">
+        <article class="experienceCard">
           <h4>Meritum Compliance</h4>
           <span>Atualmente</span>
           <p>Responsável pelo desenvolvimento de novas aplicações e manutenção dos projetos Front-end.</p>
@@ -107,7 +107,7 @@
           </button>
         </div>
       </header>
-      <div role="projectsCarousel"> 
+      <div class="projectsCarousel"> 
         <article class="projectCard">
           <header>
             <img class="coverImage" src="./assets/images/covers/ignews.jpg" alt="Ig News">

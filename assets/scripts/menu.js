@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let isMenuEnabled = false;
 
-  const mainMenu = document.querySelectorAll('[role=menu')[0];
-  const togglerButton = document.querySelectorAll('[role=menu-toggler]')[0];
-  const closerButton = document.querySelectorAll('[role=menu-closer]')[0];
+  const mainMenu = document.querySelectorAll('[role=menu]')[0];
+  const togglerButton = document.querySelectorAll('.buttonToggler')[0];
+  const closerButton = document.querySelectorAll('.buttonCloser')[0];
 
   const tabletScreenSize = window.matchMedia(`(max-width: ${tabletScreenQuery}px)`);
 

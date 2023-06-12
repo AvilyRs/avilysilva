@@ -8,7 +8,7 @@
   margin: 0 auto;
   background: transparent;
 
-  & button[role="menu-closer"] {
+  & .buttonCloser {
     display: none;
 
     position: fixed;
@@ -33,7 +33,7 @@
     @include linkHover;
   }
 
-  & button[role="menu-toggler"] {
+  & .buttonToggler {
     display: none;
     border: none;
 
@@ -86,11 +86,11 @@
   @include tabletScreen {
     padding: 0 1rem;
 
-    & button[role="menu-closer"] {
+    & .buttonCloser {
       display: none;
     }
 
-    & button[role="menu-toggler"] {
+    & .buttonToggler {
       display: inline-block;
     }
 

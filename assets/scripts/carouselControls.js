@@ -1,8 +1,8 @@
 const scrollForceNext = 200;
 const scrollForcePrev = -200;
 
-const experiencesCarousel = document.querySelectorAll('[role=experiencesCarousel]')[0];
-const projectsCarousel = document.querySelectorAll('[role=projectsCarousel]')[0];
+const experiencesCarousel = document.querySelectorAll('.experiencesCarousel')[0];
+const projectsCarousel = document.querySelectorAll('.projectsCarousel')[0];
 
 function experiencesCarouselScrollToLeft() {
   experiencesCarousel.scrollBy(scrollForcePrev, 0);
