@@ -34,12 +34,16 @@ class Menu {
     return this;
   }
 
+  addListener(element, callback) {
+    element.addEventListener(callback);
+  }
+
   enableMenuVisibilityControls() {    
     this.buttonToggler.addEventListener('click', this.toggleMenu.bind(this));
     this.buttonCloser.addEventListener('click', this.toggleMenu.bind(this));
 
-    this.tabletScreenSize.addEventListener('change', function() {
-      if (this.tabletScreenSize.matches && menu.isMenuEnabled) {
+    this.addListener.bind(this,this.tabletScreenSize, function() {
+      if (this && menu.isMenuEnabled) {
         this.mainMenu.style.display = 'inline-block';
         this.buttonCloser.style.display = 'inline-block';
       } else {
