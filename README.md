@@ -1,4 +1,4 @@
-# :black_nib: Portifólio
+# :black_nib: Portfólio
 
 Conheça um pouco mais sobre minha história, projetos que desenvolvi, conhecimentos que adquiri e empresas que já passei pela minha carreira. Meu Portifólio profissional.
 
