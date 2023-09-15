@@ -22,7 +22,6 @@
 
     height: 4rem;
     width: 4rem;
-    // padding: 1rem;
     border: none;
     border-radius: 50%;
 
@@ -76,6 +75,23 @@
       font-size: 1.25rem;
 
       @include linkHover;
+
+      &::before {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        content: '';
+        height: 2px;
+        width: 0%;
+        transition: width 0.3s ease-in-out;
+        background: $cyan-500;
+      }
+
+      &:hover {    
+        &::before {
+          width: 100%;
+        }
+      }
     }
 
     li + li {
