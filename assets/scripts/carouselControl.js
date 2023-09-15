@@ -22,7 +22,6 @@ class CarouselControl {
   }
   
   initialize() {
-    this.scrollNext();
     this.addListeners();
   }
 }
