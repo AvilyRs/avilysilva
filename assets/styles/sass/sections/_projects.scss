@@ -1,22 +1,57 @@
 .projectsContainer {
   margin-left: calc((100vw - 1088px) / 2);
 
-  @include tabletScreen {
-    margin-left: unset;
-    padding: 0 1rem;
-   }
-
+  
   & > .projectsCarousel {
     display: flex;
     gap: 2.3125rem;
-
+    
     max-width: 1550px;
+    padding-right: 28rem;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-
+    
     &::-webkit-scrollbar {
       display: none;
+    }
+    
+    mask-image: linear-gradient(to left, transparent 20%, $gray-900 50%);
+    -webkit-mask-image: linear-gradient(to left, transparent 20%, $gray-900 50%);
+  }
+
+  @include desktopScreen {
+    & > .projectsCarousel {
+      padding-right: 15rem;
+
+      mask-image: linear-gradient(to left, transparent 0%, $gray-900 20%);
+      -webkit-mask-image: linear-gradient(to left, transparent 0%, $gray-900 20%);
+    }
+  }
+  
+  @include tabletScreen {
+    margin-left: unset;
+    padding: 0 1rem;
+
+    mask-image: linear-gradient(to left, transparent 0%, $gray-900 20%);
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, $gray-900 20%);
+   }
+
+   @include mobileScreen {
+    & > .projectsCarousel {
+      padding-right: 2rem;
+
+      mask-image: linear-gradient(to left, transparent 0%, $gray-900 0%);
+      -webkit-mask-image: linear-gradient(to left, transparent 0%, $gray-900 0%);
+    }
+  }
+
+  @include mobileExtraSmallScreen {
+    & > .projectsCarousel {
+      padding-right: 0rem;
+
+      mask-image: linear-gradient(to left, transparent 0%, $gray-900 0%);
+      -webkit-mask-image: linear-gradient(to left, transparent 0%, $gray-900 0%);
     }
   }
 }
