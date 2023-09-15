@@ -1,22 +1,52 @@
 .experiencesContainer {
   margin-left: calc((100vw - 1088px) / 2);
 
-  @include tabletScreen {
-   margin: unset;
-   padding: 0 1rem;
-  }
-
   & > .experiencesCarousel {
     display: flex;
     gap: 2.3125rem;
 
     max-width: 1550px;
+    padding-right: 28rem;
+
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    mask-image: linear-gradient(to left, transparent 15%, $gray-900 30%);
+    -webkit-mask-image: linear-gradient(to left, transparent 15%, $gray-900 30%);
+  }
+
+  @include desktopScreen {
+    & > .experiencesCarousel {
+      padding-right: 18rem;
+
+      mask-image: linear-gradient(to left, transparent 0%, $gray-900 20%);
+      -webkit-mask-image: linear-gradient(to left, transparent 0%, $gray-900 20%);
+    }
+  }
+
+  @include tabletScreen {
+    margin: unset;
+    padding: 0 1rem;
+
+    & > .experiencesCarousel {
+      padding-right: 15rem;
+
+      mask-image: linear-gradient(to left, transparent 0%, $gray-900 10%);
+      -webkit-mask-image: linear-gradient(to left, transparent 0%, $gray-900 10%);
+    }
+   }
+
+   @include mobileScreen {
+    & > .projectsCarousel {
+      padding-right: 2rem;
+
+      mask-image: unset;
+      -webkit-mask-image: unset;
     }
   }
 }

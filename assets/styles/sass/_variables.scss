@@ -11,8 +11,9 @@ $card-gradient: linear-gradient(to bottom, #171C23, #10141A);
 $body-gradient: linear-gradient(to bottom, #000223, #0A0A0A);
 
 @mixin linkHover() {
+  position: relative;
   transition: color 0.2s;
-
+  
   &:hover {
     color: $cyan-500;
   }
