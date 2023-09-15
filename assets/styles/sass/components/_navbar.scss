@@ -28,8 +28,11 @@
     z-index: 6;
 
     background: rgba(255, 255, 255, 0.05);
-
-    @include linkHover;
+    transition: color 0.2s;
+  
+    &:hover {
+      color: $cyan-500;
+    }
   }
 
   & .buttonToggler {
@@ -148,6 +151,14 @@
 
       & li + li {
         margin-left: unset;
+      }
+    }
+
+    & ul {
+      li a {
+        &::before {
+          display: none;
+        }
       }
     }
   }
